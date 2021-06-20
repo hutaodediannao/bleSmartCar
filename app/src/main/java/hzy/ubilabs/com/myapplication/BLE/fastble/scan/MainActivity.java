@@ -32,7 +32,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -43,7 +42,6 @@ import hzy.ubilabs.com.myapplication.BLE.fastble.data.ScanResult;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -254,6 +252,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public void onServicesDiscovered() {
             progressDialog.dismiss();
             startActivity(new Intent(MainActivity.this, OperationActivity.class));
+            finish();
         }
     };
 

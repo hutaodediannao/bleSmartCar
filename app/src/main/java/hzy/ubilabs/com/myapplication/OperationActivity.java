@@ -247,6 +247,7 @@ public class OperationActivity extends AppCompatActivity {
         public void onDisConnected() {
             //蓝牙连接断开，开始退出该页面
             finish();
+            System.exit(-1);
         }
     };
 
