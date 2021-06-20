@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/up"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg"
+            android:clickable="true"
+            android:onClick="handEvent"
+            android:padding="30dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/up"
+            android:text="前进" />
+
+        <ImageButton
+            android:id="@+id/down"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/bg"
+            android:clickable="true"
+            android:onClick="handEvent"
+            android:padding="30dp"
+            android:rotation="180"
+            android:scaleType="centerInside"
+            android:src="@mipmap/up"
+            android:text="后退" />
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/bg"
+            android:clickable="true"
+            android:onClick="handEvent"
+            android:padding="30dp"
+            android:rotation="270"
+            android:scaleType="centerInside"
+            android:src="@mipmap/up" />
+
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/bg"
+            android:clickable="true"
+            android:onClick="handEvent"
+            android:padding="30dp"
+            android:rotation="90"
+            android:scaleType="centerInside"
+            android:src="@mipmap/up" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="胡氏BLE智能车"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnShaChe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="#EDEDED"
+        android:onClick="handEvent"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="紧急刹车"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
